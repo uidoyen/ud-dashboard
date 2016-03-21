@@ -1,0 +1,44 @@
+<div class="padding">
+<div class="col-lg-12">
+
+<!-- <div class="col-lg-2"><a ng-href="#/articles/add" class="btn btn-primary success pull-right">Add New Article</a></div>
+ --><div class="clearfix"></div>
+<div class="filter-section mb-10">
+<div class="col-lg-1">Filter</div>
+<div class="col-lg-3">
+    <select ng-model="category" class="form-control">
+      <option value="">Select Category</option>
+      <option ng-repeat="category in categories" value="{{category.name}}">{{category.name}}</option>
+    </select>
+</div>
+<div class="col-lg-3">
+    <select ng-model="user" class="form-control">
+      <option value="">Select User</option>
+      <option ng-repeat="user in users" value="{{user.name}}">{{user.name}}</option>
+    </select>
+</div>
+<div class="col-lg-3">
+    <input type="text" ng-model="keywords" placeholder="enter title" class="form-control">
+</div>
+<div class="clearfix"></div>
+</div>
+<table class="table table-striped">
+  <tr>
+    <th><input type="checkbox" ng-model="isall" ng-click="selectAllRows()" /></th>
+    <th>Date</th>
+    <th>Title</th>
+    <th>Category</th>
+    <th>User</th>
+    <th>Action</th>
+  </tr>
+    <tr ng-repeat="article in articles | filter:{category:category, user:user,title:keywords}" ng-class="{'success' : tableSelection[$index]}">
+    <td><input type="checkbox" ng-model="tableSelection[$index]"></td>
+    <td>{{article.date | date}}</td>
+    <td>{{article.title}}</td>
+    <td>{{article.category}}</td>
+    <td>{{article.user}}</td>
+    <td><a ng-href="#/dashboard/articles/edit/{{article._id}}"><i class="fa fa-pencil-square-o"></i></a> <a ng-click="removeArticle(article._id)"><i class="fa fa-trash-o"></i></a> <a ng-href="#/dashboard/articles/details/{{article._id}}"><i class="fa fa-search"></i></a></td>
+  </tr>
+</table>
+</div>
+</div>

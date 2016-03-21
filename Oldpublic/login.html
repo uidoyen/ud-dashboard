@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Starter Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="css/bootstrap/bootstrap.css" rel="stylesheet"> -->
+    <link href="css/foundation.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap-material/bootstrap-material-design.css" rel="stylesheet"> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/wysiwyg/trumbowyg.css" rel="stylesheet">
+<!--     <link href="css/angular-gridster.min.css" rel="stylesheet">
+<link href="css/gridster.css" rel="stylesheet"> -->
+    <link href="ext-modules/psFramework/psFramework.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/firebase.js"></script>
+    <script src="Scripts/angularfire.min.js"></script>
+    <!-- <script src="Scripts/firebase-util.js"></script> -->
+    <script src="Scripts/security.js"></script>
+    <script src="Scripts/wysiwyg/trumbowyg.js"></script>
+
+    <script src="Scripts/bootstrap/bootstrap.js"></script>
+    <script src="Scripts/angular-gridster.min.js"></script>
+    <script src="Scripts/ui-bootstrap-tpls-1.2.3.min.js"></script>
+
+    <!-- Menu Module -->
+    <script src="ext-modules/psMenu/psMenuModule.js"></script>
+    <script src="ext-modules/psMenu/psMenuController.js"></script>
+    <script src="ext-modules/psMenu/psMenuDirective.js"></script>
+    <script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
+    <script src="ext-modules/psMenu/psMenuGroupDirective.js"></script>
+
+    <!-- Dashboard Module -->
+    <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
+    <script src="ext-modules/psDashboard/psDashboardDirective.js"></script>
+    <script src="ext-modules/psDashboard/psWelcomeController.js"></script>
+    <script src="ext-modules/psDashboard/udWelcomeDirective.js"></script>
+
+    <!-- Contacts Module -->
+    <script src="ext-modules/udContacts/udContactsModule.js"></script>
+    <script src="ext-modules/udContacts/udContactsController.js"></script>
+    <script src="ext-modules/udContacts/udContactsDirective.js"></script>
+
+    <!-- Framework Module -->
+    <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkController.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
+    
+    <!-- Login Module -->
+    <script src="ext-modules/udLogin/udLoginModule.js"></script>
+    <script src="ext-modules/udLogin/udLoginController.js"></script>
+    <script src="ext-modules/udLogin/udLoginDirective.js"></script>
+    <script src="ext-modules/udLogin/udLogOutController.js"></script>
+
+    <!-- Job Directory Module -->
+    <script src="ext-modules/udJobs/udJobsModule.js"></script>
+    <script src="ext-modules/udJobs/udArticlesController.js"></script>
+    <script src="ext-modules/udJobs/udJobsDirective.js"></script>
+
+
+    <!-- <script src="app.js"></script> -->
+
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+
+    <script src="app/directives/wwaDashboardDirective.js"></script>
+    <script src="app/directives/wwwContactDirective.js"></script>
+    <script src="app/directives/wwaGuidesDirective.js"></script>
+    <script src="app/directives/wwaLocationsDirective.js"></script>
+    <script src="app/directives/wwwLoginDirective.js"></script>
+    <script src="app/directives/wwaJobsDirective.js"></script>
+    
+  </head>
+
+  <body class="container-fluid">
+
+    <ps-framework title="UI Doyen"
+                  subtitle="Administrative Application"
+                  icon="fa-cube"
+                  welcometitle="Welcome to UIDoyen"
+                  > 
+
+                  <!-- <ps-framework title="UI Doyen"
+                  subtitle="Administrative Application"
+                  icon-file="images/kayak-icon-flat.png"> -->
+
+        <ps-menu>
+            <ps-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></ps-menu-item>
+            <ps-menu-item label="Contacts" icon="fa-user" route="contacts"></ps-menu-item>
+            <ps-menu-item label="Login" icon="fa-lock" route="login"></ps-menu-item>
+            <ps-menu-item label="Knowledge Base" icon="fa-lock" route="articles"></ps-menu-item>
+            <ps-menu-item label="Articles" icon="fa-lock" route="articles"></ps-menu-item>
+            <ps-menu-item label="Locations" icon="fa-location-arrow" route="locations"></ps-menu-item>
+            <ps-menu-item label="Raft Guides" icon="fa-user" route="guides"></ps-menu-item>
+
+            <ps-menu-group label="Equipment" icon="fa-gears">
+                <ps-menu-item label="Rafts" icon="fa-unlink" route="rafts"></ps-menu-item>
+                <ps-menu-item label="Paddles" icon="fa-magic" route="paddles"></ps-menu-item>
+                <ps-menu-item label="Life Vests" icon="fa-life-ring" route="vests"></ps-menu-item>
+            </ps-menu-group>
+
+        </ps-menu>
+
+    </ps-framework>
+
+</body>
+</html>

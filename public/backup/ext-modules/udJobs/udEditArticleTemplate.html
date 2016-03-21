@@ -1,0 +1,23 @@
+<div class="padding">
+<div class="large-12 columns">
+    <form>      
+        <h2>Update Article</h2>
+        <label>Enter Title here
+          <input type="text" ng-model="article.title" placeholder="Enter title here">
+        </label>
+        <label>Category
+        <select ng-model="article.category">
+          <option value="">Select Category</option>
+          <option ng-repeat="category in categories" value="{{category.name}}">{{category.name}}</option>
+        </select>
+      </label>
+      <script>$('#bodyContent').trumbowyg();</script>
+      <label>Content
+          <textarea placeholder="Content" ng-model="article.body" rows="20"></textarea>
+        </label>
+        <a type="submit" class="button expanded" ng-click="updateArticle()">Update Article</a>
+        <a type="submit" class="button expanded warning" ng-href="#/articles">Cancel</a>
+    </form>
+
+  </div>
+</div>

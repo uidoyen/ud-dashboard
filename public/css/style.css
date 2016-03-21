@@ -1,0 +1,69 @@
+body {
+	background: #F0F0F0;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	color:#48485e;
+}
+a {
+    color: #00c09d;
+}
+h1, h2, h3, h4, h5 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #4B4D4B;
+}
+.mb-10 {
+    margin-bottom: 10px;
+    clear: both;
+}
+.mb-30 {
+    margin-bottom: 30px;
+    clear: both;
+}
+.panel {
+	border-color: #e7eaec;
+	border-style: solid ;
+	border-width: 3px 0 0;
+	border-radius: 0;
+}
+.form-control {
+	font-size: 0.9375em;
+	height: 44px;
+	padding:10px 12px;
+}
+label {
+	font-size: 0.875em;
+	font-weight: normal;
+}
+
+.alert {
+	border-radius: 0;
+	padding: 5px;
+	 -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+
+.add-users h4 {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.table > thead > tr > th {
+	background: #e1e1e1;
+	border-bottom: 1px solid #c9c9c9;
+}
+/* BUTTONS */
+.btn-primary {
+  color: #fff;
+  background-color: #ef2964;
+  border-color: #d01c51;
+}
+
+.full-background-image {
+	background: url(http://triangular.oxygenna.com/assets/images/backgrounds/material-backgrounds/mb-bg-01.jpg);
+	min-height: 200px;
+}

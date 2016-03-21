@@ -1,0 +1,124 @@
+<div class="full-background-image"></div>
+<div class="padding">
+<div class="col-md-12">
+<form name="editUser">
+<div ng-cloak>
+  <md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="Profile">
+        <md-content class="md-padding">
+          <div class="alert alert-danger" role="alert" ng-repeat="error in errors">{{error}}</div>
+<div class="form-group row">
+    <label for="name" class="col-sm-2 form-control-label">Full Name:</label>
+    <div class="col-sm-10">
+      <input ng-model="name" type="name" class="form-control" id="name" placeholder="Full Name">
+    </div>
+ </div>
+ <div class="form-group row">
+    <label for="email" class="col-sm-2 form-control-label">Email:</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="email" id="email" placeholder="User email" class="form-control">
+    </div>
+ </div>
+
+ <div class="form-group row">
+    <label for="mobile" class="col-sm-2 form-control-label">Mobile:</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="mobile" id="mobile" placeholder="Mobile" class="form-control">
+    </div>
+ </div>
+ <div class="form-group row">
+    <label for="location" class="col-sm-2 form-control-label">Location:</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="location" id="location" placeholder="Location" class="form-control">
+    </div>
+ </div>
+ <div class="form-group row">
+    <label for="website" class="col-sm-2 form-control-label">Website:</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="website" id="website" placeholder="http://" class="form-control">
+    </div>
+ </div>
+ <h4>Social Profile</h4>
+ <div class="form-group row">
+    <label for="twitter" class="col-sm-2 form-control-label">Twitter:</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="twitter" id="twitter" placeholder="twitter profile URL" class="form-control">
+    </div>
+ </div>
+<div class="form-group row">
+    <label for="facebook" class="col-sm-2 form-control-label">Facebook:</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="facebook" id="facebook" placeholder="facebook profile URL" class="form-control">
+    </div>
+ </div>
+<div class="form-group row">
+    <label for="linkedin" class="col-sm-2 form-control-label">Linkedin:</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="linkedin" id="linkedin" placeholder="Linkedin profile" class="form-control">
+    </div>
+ </div>
+<h4>About Yourself</h4>
+<div class="form-group row">
+    <label for="bio" class="col-sm-2 form-control-label">Biographical Info:</label>
+    <div class="col-sm-10">
+      <textarea ng-model="bio" name="bio" cols="30" rows="5" class="form-control"></textarea>
+    </div>
+ </div>
+<div class="form-group row">
+    <label for="profilepic" class="col-sm-2 form-control-label">Profile Picture:</label>
+    <div class="col-sm-10">
+      <input type="file" ng-model="profilepic" name="profilepic" id="profilepic" class="form-control">
+    </div>
+ </div>
+<div class="form-group row">
+  <div class="col-md-12">
+    
+      <input type="submit" value="Add User" class="btn btn-primary btn-lg" ng-click="addUser()"> <input type="reset" value="Reset" class="btn btn-warning btn-lg">
+  
+  </div>
+</div>
+        </md-content>
+      </md-tab>
+      <md-tab label="Password">
+        <md-content class="md-padding">
+          <div class="form-group row">
+    <label for="password" class="col-sm-2 form-control-label">Password:</label>
+    <div class="col-sm-10">
+      <input type="password" ng-model="registerUser.password" id="password" placeholder="Password" class="form-control">
+    </div>
+ </div>
+ <div class="form-group row">
+    <label for="confirmPassword" class="col-sm-2 form-control-label">Confirm Password:</label>
+    <div class="col-sm-10">
+      <input type="password" ng-model="registerUser.confirmPassword" id="confirmPassword" placeholder="Confirm Password" class="form-control">
+    </div>
+ </div>
+        </md-content>
+      </md-tab>
+      <md-tab label="Notifications">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Three</h1>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
+</form>
+
+
+
+
+
+
+
+
+<!-- Add Contact -->
+<div class="add-users">
+<form name="addContacts">
+
+	
+</form>
+</div>
+<!-- ./add-users -->
